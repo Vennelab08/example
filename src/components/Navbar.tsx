@@ -11,22 +11,27 @@ const Links = [
 
 const Navbar = () => {
   return (
-       <nav className ="bg-base-300">
-            <div className ="navbar max-w-6xl mx-auto flex-col sm:flex-row">
-                 <Link href="/" className="btn btn-primary">
-                 Home
-                 </Link>
-                 <ul className ="menu md:ml-8 flex-col sm:flex-row">
-                     {Links.map((link) => (
-                        <li key={link.href}>
-                              <link href={link.href} className="captalize">
-                              {link.text}
-                              </link>
-                        </li>
-                     ))}
-                 </ul>
+       <button className ="bg-sky-500 hover:bg-sky-500..." >
+            <div className="size-full md:size-auto"> 
+            <div className="text-[30px]">
+            <div className="flex Justify-evenly...">
+                  <div className="flex-none w-14 ...">
+                        Home
+                  </div>
+                  <div className="flex-auto w-64 ...">
+                        AboutUs
+                  </div>
+                  <div className="flex-auto w-32 ...">
+                        Newsletter
+                  </div>
+                  <div className="flex-auto w-64 ...">
+                        Judgements
+                  </div>
             </div>
-       </nav>
+            </div>
+            </div>
+            
+      </button>
   )
 };
 
